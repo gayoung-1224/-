@@ -1,0 +1,6 @@
+{
+  "name": "공정 모둠 메이커",
+  "description": "중복을 최소화하는 알고리즘과 하루 한 번 제한 기능이 있는 초등학생용 공정 모둠 구성 서비스입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum:wght@400;700&family=Nanum+Gothic:wght@400;700;800&family=Fira+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nanum Gothic", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Jua", sans-serif;
+  --font-gowun: "Gowun Dodum", sans-serif;
+}
+
+/* Custom bounce / sparkle animations */
+@keyframes pop-in {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-pop-in {
+  animation: pop-in 0.3s ease-out forwards;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
